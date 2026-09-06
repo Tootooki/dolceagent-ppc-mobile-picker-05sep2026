@@ -1,0 +1,246 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1, user-scalable=no, viewport-fit=cover">
+  <title>DOLCE AGENT — Accounting Daily 3 Sep 2026</title>
+  <meta name="description" content="The responsive desktop and mobile DOLCE AGENT accounting daily view dated 3 September 2026.">
+  <meta property="og:title" content="DOLCE AGENT — Accounting Daily 3 Sep 2026">
+  <meta property="og:description" content="The DOLCE AGENT one-day accounting workspace for 3 September 2026.">
+  <meta property="og:type" content="website">
+  <meta property="og:image" content="og.png">
+  <meta name="twitter:card" content="summary_large_image">
+  <meta name="theme-color" content="#000000">
+  <link rel="stylesheet" href="styles.css?v=74">
+  <link rel="stylesheet" href="chat.css?v=74">
+  <link rel="stylesheet" href="frame.css?v=69">
+  <link rel="stylesheet" href="workspaces.css?v=67">
+  <link rel="stylesheet" href="pure-colors.css?v=68">
+  <link rel="stylesheet" href="actions.css?v=76">
+  <link rel="stylesheet" href="targets.css?v=83">
+  <link rel="stylesheet" href="ppc-layout.css?v=83">
+</head>
+<body>
+  <!-- Threshold only the brand logo, never the product photos or data colors. -->
+  <svg class="color-filter-definitions" xmlns="http://www.w3.org/2000/svg" width="0" height="0" aria-hidden="true" focusable="false">
+    <defs>
+      <filter id="logo-pure-bw" x="0" y="0" width="100%" height="100%" color-interpolation-filters="sRGB">
+        <feColorMatrix type="saturate" values="0"/>
+        <feComponentTransfer>
+          <feFuncR type="discrete" tableValues="0 1"/>
+          <feFuncG type="discrete" tableValues="0 1"/>
+          <feFuncB type="discrete" tableValues="0 1"/>
+          <feFuncA type="identity"/>
+        </feComponentTransfer>
+      </filter>
+    </defs>
+  </svg>
+  <main class="workbook-shell">
+    <header class="brand-header" aria-label="DOLCE AGENT main navigation">
+      <button id="header-menu" class="header-button" type="button" data-mobile-menu="settings" aria-label="Menu" aria-haspopup="dialog" aria-expanded="false" aria-controls="menu-backdrop">
+        <span class="desktop-header-content">MENU</span>
+        <svg class="mobile-header-icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true" focusable="false"><path d="M4 6h16M4 12h16M4 18h16"/></svg>
+      </button>
+      <button id="header-home" class="header-button header-logo" type="button" aria-label="DOLCE AGENT — back to sheet start">
+        <img class="desktop-header-content" src="dolce-agent-logo.png" alt="DOLCE AGENT" width="1774" height="887" fetchpriority="high">
+        <span class="mobile-header-logo" aria-hidden="true">
+          <span class="header-word header-word-dolce"><img src="dolce-agent-logo.png" alt="" width="1774" height="887"></span>
+          <span class="header-word header-word-agent"><img src="dolce-agent-logo.png" alt="" width="1774" height="887"></span>
+        </span>
+      </button>
+      <button id="header-login" class="header-button" type="button" data-mobile-menu="login" aria-label="Login" aria-haspopup="dialog" aria-expanded="false" aria-controls="menu-backdrop">
+        <span class="desktop-header-content">LOGIN</span>
+        <svg class="mobile-header-icon header-person" viewBox="0 0 24 24" fill="currentColor" aria-hidden="true" focusable="false"><circle cx="12" cy="8" r="5"/><path d="M20 21a8 8 0 0 0-16 0Z"/></svg>
+      </button>
+    </header>
+
+    <section id="sheet" class="sheet-viewport mobile-view" aria-label="ACCOUNTING_ALL_PERIODS_V2 spreadsheet">
+      <div class="loading">Loading ACCOUNTING_ALL_PERIODS_V2…</div>
+    </section>
+
+    <div class="sheet-bottom-frame" aria-hidden="true"></div>
+
+    <nav class="mobile-tab-bar" aria-label="DOLCE AGENT accounting navigation">
+      <button id="mobile-view-toggle" class="mobile-tab" type="button" aria-pressed="true" aria-label="Switch to full three-line view">
+        <span id="view-mode-icon" class="nav-icon nav-icon-view" aria-hidden="true"><svg viewBox="0 0 120 120" focusable="false"><path d="M10 60C32 30 88 30 110 60"/><path d="M10 60C32 90 88 90 110 60"/><circle cx="60" cy="60" r="14"/><g class="view-rays"><path d="M60 14V2"/><path d="M21 23L10 12"/><path d="M99 23L110 12"/></g></svg></span><small>VIEW</small>
+      </button>
+      <button class="mobile-tab" type="button" data-mobile-menu="products">
+        <span class="nav-icon nav-icon-products" aria-hidden="true"><svg viewBox="0 0 120 120" focusable="false"><path d="M7 22H17Q20 22 21 26L32 77Q33 82 38 82H91Q95 82 97 77L106 44Q107 39 102 39H24"/><path class="cart-grid" d="M27 52H103M30 67H99M50 42V79M74 42V79"/><circle class="cart-wheel" cx="41" cy="100" r="5"/><circle class="cart-wheel" cx="89" cy="100" r="5"/></svg></span><small>PRODUCTS</small>
+      </button>
+      <button class="mobile-tab" type="button" data-mobile-menu="periods">
+        <span class="nav-icon nav-icon-period" aria-hidden="true"><svg viewBox="0 0 120 120" focusable="false"><rect x="15" y="21" width="90" height="84" rx="12"/><path d="M15 47H105M36 9V30M84 9V30"/><g class="calendar-dots"><rect x="32" y="61" width="11" height="8" rx="4"/><rect x="54.5" y="61" width="11" height="8" rx="4"/><rect x="77" y="61" width="11" height="8" rx="4"/><rect x="32" y="82" width="11" height="8" rx="4"/><rect x="54.5" y="82" width="11" height="8" rx="4"/><rect x="77" y="82" width="11" height="8" rx="4"/></g></svg></span><small>PERIOD</small>
+      </button>
+      <button id="mobile-settings" class="mobile-tab" type="button" data-mobile-menu="settings">
+        <span class="nav-icon nav-icon-settings" aria-hidden="true"><svg viewBox="0 0 120 120" focusable="false"><g transform="scale(5)"><path d="M12.22 2h-.44a2 2 0 0 0-2 2v.18a2 2 0 0 1-1 1.73l-.43.25a2 2 0 0 1-2 0l-.15-.08a2 2 0 0 0-2.73.73l-.22.38a2 2 0 0 0 .73 2.73l.15.09a2 2 0 0 1 1 1.73v.51a2 2 0 0 1-1 1.74l-.15.09a2 2 0 0 0-.73 2.73l.22.38a2 2 0 0 0 2.73.73l.15-.08a2 2 0 0 1 2 0l.43.25a2 2 0 0 1 1 1.73V20a2 2 0 0 0 2 2h.44a2 2 0 0 0 2-2v-.18a2 2 0 0 1 1-1.73l.43-.25a2 2 0 0 1 2 0l.15.08a2 2 0 0 0 2.73-.73l.22-.38a2 2 0 0 0-.73-2.73l-.15-.09a2 2 0 0 1-1-1.74v-.51a2 2 0 0 1 1-1.73l.15-.09a2 2 0 0 0 .73-2.73l-.22-.38a2 2 0 0 0-2.73-.73l-.15.08a2 2 0 0 1-2 0l-.43-.25a2 2 0 0 1-1-1.73V4a2 2 0 0 0-2-2Z"/><circle cx="12" cy="12" r="3"/></g></svg></span><small>SETTINGS</small>
+      </button>
+    </nav>
+
+    <div id="menu-backdrop" class="menu-backdrop" role="presentation" hidden>
+      <aside class="period-menu" role="dialog" aria-modal="true" aria-labelledby="period-menu-title">
+        <div class="period-menu-header">
+          <div><span class="menu-brand">DOLCE AGENT</span><h2 id="period-menu-title">Settings</h2></div>
+          <div class="menu-header-actions">
+            <button id="menu-back" class="menu-back" type="button" aria-label="Back to Settings" hidden>←</button>
+            <button id="menu-close" class="menu-close" type="button" aria-label="Close menu">×</button>
+          </div>
+        </div>
+        <div class="period-menu-body">
+        <section class="menu-section" data-menu-section="login" hidden>
+          <div class="login-notice">
+            <h3>Account login is not connected yet</h3>
+            <p>This public version does not require an account. You can continue viewing the sheet.</p>
+          </div>
+        </section>
+        <div class="settings-shortcuts" data-menu-section="settings" aria-label="Current sheet selections">
+          <button type="button" data-open-panel="products"><span><small>Product</small><span id="selected-category-label">All products</span></span><b>Change</b></button>
+          <button type="button" data-open-panel="periods"><span><small>Period</small><span id="selected-period-label">1 Day</span></span><b>Change</b></button>
+        </div>
+        <section class="menu-section" data-menu-section="products">
+          <div class="category-grid" role="group" aria-label="Product category">
+  <button class="category-option selected" type="button" data-category="all" aria-pressed="true">
+    <i style="background-color:currentColor" aria-hidden="true"></i><span>All products</span><small>Pistachio, Kataifi & Chocos</small>
+  </button>
+  <button class="category-option" type="button" data-category="pistachio" aria-pressed="false">
+    <i style="background-color:currentColor" aria-hidden="true"></i><span>Pistachio</span><small>Pistachio products only</small>
+  </button>
+  <button class="category-option" type="button" data-category="kataifi" aria-pressed="false">
+    <i style="background-color:currentColor" aria-hidden="true"></i><span>Kataifi</span><small>Kataifi products only</small>
+  </button>
+  <button class="category-option" type="button" data-category="choco" aria-pressed="false">
+    <i style="background-color:currentColor" aria-hidden="true"></i><span>Chocos</span><small>Chocolate products only</small>
+  </button></div>
+        </section>
+        <section class="menu-section" data-menu-section="periods">
+          <div class="period-grid">
+  <button class="period-option" type="button" data-period="all" aria-pressed="false">
+    <span>All periods</span><small>Combined view of every period</small>
+  </button>
+  <button class="period-option selected" type="button" data-period="1d" aria-pressed="true">
+    <span>1 Day</span><small>03sep2026</small>
+  </button>
+  <button class="period-option" type="button" data-period="7d" aria-pressed="false">
+    <span>7 Days</span><small>03jun2026_09jun2026</small>
+  </button>
+  <button class="period-option" type="button" data-period="30d" aria-pressed="false">
+    <span>30 Days</span><small>11may2026_09jun2026</small>
+  </button>
+  <button class="period-option" type="button" data-period="60d" aria-pressed="false">
+    <span>60 Days</span><small>11apr2026_09jun2026</small>
+  </button>
+  <button class="period-option" type="button" data-period="90d" aria-pressed="false">
+    <span>90 Days</span><small>12mar2026_09jun2026</small>
+  </button>
+  <button class="period-option" type="button" data-period="180d" aria-pressed="false">
+    <span>180 Days</span><small>12dec2025_09jun2026</small>
+  </button>
+  <button class="period-option" type="button" data-period="365d" aria-pressed="false">
+    <span>365 Days</span><small>10jun2025_09jun2026</small>
+  </button>
+  <button class="period-option" type="button" data-period="range" aria-pressed="false">
+    <span>Range</span><small>07jun2026_09jun2026</small>
+  </button></div>
+        </section>
+        <section class="menu-section column-order-panel" data-menu-section="column-order">
+          <div class="layout-switch" role="group" aria-label="Column order">
+            <button class="layout-option" type="button" data-layout="metric" aria-pressed="false">
+              <span>By metric</span><small>Sales together, ads together, and so on</small>
+            </button>
+            <button class="layout-option selected" type="button" data-layout="period" aria-pressed="true">
+              <span>By period</span><small>All columns for each period together</small>
+            </button>
+          </div>
+        </section>
+        <section class="menu-section" data-menu-section="settings">
+        <div class="mobile-header-view">
+          <div class="menu-divider"><span>Sheet view</span></div>
+          <div class="layout-switch" role="group" aria-label="Sheet header view">
+            <button class="layout-option selected" type="button" data-header-mode="compact" aria-pressed="true"><span>Compact</span><small>1-line headers</small></button>
+            <button class="layout-option" type="button" data-header-mode="full" aria-pressed="false"><span>Full</span><small>3-line headers</small></button>
+          </div>
+        </div>
+        <div class="menu-divider zoom-divider"><span>Spreadsheet zoom</span></div>
+        <section class="zoom-panel" aria-label="Spreadsheet zoom controls">
+          <div class="zoom-stepper">
+            <button id="zoom-out" class="zoom-step-button" type="button" aria-label="Zoom out"><span aria-hidden="true">−</span></button>
+            <output id="zoom-value" class="zoom-value" aria-live="polite">100%</output>
+            <button id="zoom-in" class="zoom-step-button" type="button" aria-label="Zoom in"><span aria-hidden="true">+</span></button>
+          </div>
+          <div class="zoom-presets" role="group" aria-label="Zoom presets">
+            <button class="zoom-preset" type="button" data-zoom="20" aria-pressed="false">20%</button>
+            <button class="zoom-preset" type="button" data-zoom="40" aria-pressed="false">40%</button>
+            <button class="zoom-preset" type="button" data-zoom="60" aria-pressed="false">60%</button>
+            <button class="zoom-preset" type="button" data-zoom="100" aria-pressed="false">100%</button>
+            <button class="zoom-preset selected" type="button" data-zoom="150" aria-pressed="true">150%</button>
+          </div>
+        </section>
+        <div class="menu-divider"><span>Freeze name column</span></div>
+        <div class="layout-switch" role="group" aria-label="Freeze name column">
+          <button class="layout-option selected" type="button" data-name-freeze="regular" aria-pressed="true"><span>Off</span><small>Scrolls with data</small></button>
+          <button class="layout-option" type="button" data-name-freeze="frozen" aria-pressed="false"><span>On</span><small>Stays beside images</small></button>
+        </div>
+        <div class="menu-divider label-type-divider"><span>Label type</span></div>
+        <div class="label-type-switch" role="group" aria-label="Label type">
+          <button class="label-type-option" type="button" data-label-type="sku" aria-pressed="false"><span>SKU</span></button>
+          <button class="label-type-option selected" type="button" data-label-type="name" aria-pressed="true"><span>Name</span></button>
+        </div>
+        <div id="column-order-settings" class="column-order-settings" hidden>
+          <div class="menu-divider layout-divider"><span>Column order</span></div>
+          <div class="layout-switch" role="group" aria-label="Column order">
+            <button class="layout-option" type="button" data-layout="metric" aria-pressed="false">
+              <span>By metric</span><small>Sales together, ads together, and so on</small>
+            </button>
+            <button class="layout-option selected" type="button" data-layout="period" aria-pressed="true">
+              <span>By period</span><small>All columns for each period together</small>
+            </button>
+          </div>
+        </div>
+        </section>
+        </div>
+        <div class="menu-footer">
+          <p id="current-period" class="current-period" hidden>All products · 1 Day · Name · 150% zoom</p>
+          <button id="apply-view" class="apply-view-button" type="button">Apply</button>
+        </div>
+      </aside>
+    </div>
+    <div id="chat-widget" class="chat-widget">
+      <section id="chat-popup" class="chat-popup" role="dialog" aria-modal="false" aria-labelledby="chat-title" aria-describedby="chat-notice" tabindex="-1" hidden>
+        <header class="studio-topbar">
+          <button id="chat-rooms-toggle" type="button" aria-label="Show conversation list" aria-expanded="false">☰</button>
+          <h2 id="chat-title">DOLCE <span>/ TEAMSPACE</span></h2>
+          <button id="chat-expand" type="button" aria-label="Expand chat" aria-pressed="false">↗</button>
+          <button id="chat-close" type="button" aria-label="Close chat">×</button>
+        </header>
+        <p id="chat-notice" class="studio-demo">DEMO · SCRIPTED AI · LOCAL ONLY</p>
+        <div class="studio-body">
+          <aside class="chat-sidebar" aria-label="Conversations">
+            <div class="sidebar-heading"><span>CONVERSATIONS</span><button id="chat-new" type="button" aria-label="New conversation">+</button></div>
+            <nav id="chat-rooms" aria-label="Demo conversations"></nav>
+            <button class="sidebar-tools" type="button" data-tool="search" aria-label="Search all conversations">⌕<span>SEARCH</span></button>
+          </aside>
+          <div class="chat-workspace">
+            <div class="chat-room-heading"><div><h3 id="chat-room-title">AI Team</h3><span id="chat-room-subtitle">Your demo command room</span></div><button id="chat-tools" type="button" data-tool="tools">TOOLS +</button></div>
+            <nav class="chat-quickbar" aria-label="Chat presets"><button type="button" data-tool="actions">ACTIONS</button><button type="button" data-tool="discounts">DISCOUNTS</button><button type="button" data-tool="voice">VOICE</button><button type="button" data-tool="faq">SUPPORT</button></nav>
+            <div class="chat-stage">
+              <div id="chat-messages" class="chat-messages" role="log" aria-live="polite" aria-relevant="additions" aria-label="Demo conversation"><article class="chat-message"><small>NOVA / DEMO AI</small><p>Welcome to your teamspace. Draft actions, rehearse a voice call, or explore the tools. Nothing here changes your business.</p></article></div>
+              <section id="chat-tool-panel" class="chat-tool-panel" aria-labelledby="chat-tool-title" hidden><header><h3 id="chat-tool-title">Tools</h3><button id="chat-tool-close" type="button" aria-label="Back to conversation">×</button></header><div id="chat-tool-content" class="chat-tool-content"></div></section>
+            </div>
+            <p id="chat-status" class="chat-status" role="status" aria-live="polite">Your private demo. Refresh to start over.</p>
+            <div id="chat-attachments" class="chat-attachments" aria-label="Pending attachments" hidden></div>
+            <form id="chat-form" class="chat-composer"><label class="chat-sr-only" for="chat-input">Message preview</label><textarea id="chat-input" rows="1" maxlength="2000" placeholder="Message your AI team…" aria-describedby="chat-notice"></textarea><button id="chat-submit" type="submit" aria-label="Send demo message" disabled>↑</button></form>
+            <nav class="chat-bottom-tools" aria-label="Composer tools"><button id="chat-photo" type="button">+ IMAGE</button><button id="chat-file" type="button">+ FILE</button><button type="button" data-tool="voice">VOICE</button><button type="button" data-tool="tools">MORE +</button></nav>
+          </div>
+        </div>
+        <input id="chat-file-input" type="file" multiple hidden><input id="chat-photo-input" type="file" accept="image/png,image/jpeg,image/webp,image/gif" multiple hidden>
+      </section>
+      <button id="chat-launcher" class="chat-launcher" type="button" aria-label="Open chat" aria-haspopup="dialog" aria-controls="chat-popup" aria-expanded="false">
+        <svg class="chat-dots" viewBox="0 0 24 24" aria-hidden="true" focusable="false"><circle cx="5" cy="12" r="2.5"/><circle cx="12" cy="12" r="2.5"/><circle cx="19" cy="12" r="2.5"/></svg>
+      </button>
+    </div>
+  </main>
+  <script src="viewport.js?v=74" defer></script>
+  <script src="app.js?v=74" defer></script>
+  <script src="chat.js?v=80" type="module"></script>
+  <script src="frame.js?v=69" type="module"></script>
+  <script src="workspaces.js?v=83" type="module"></script>
+</body>
+</html>
